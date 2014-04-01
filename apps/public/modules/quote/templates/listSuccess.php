@@ -28,11 +28,14 @@
         <div class="panel-heading">
           <div class="pull-left">
             <span class="text-muted">Category :</span> 
-            <a href="<?php echo url_for('@category_show?id='.$quote['category_id'].'&slug='.PublicTools::url_slug($quote['quote_category_title'])); ?>" title="<?php echo $quote['quote_category_title'] ?> quotes"><?php echo $quote['quote_category_title'] ?></a>
+            <?php $quote_url = url_for('@quote_show?id='.$quote['id'].'&slug='. PublicTools::url_slug(mb_substr(html_entity_decode($quote['body']), 0, 40, 'UTF-8') ) ); ?>
+            <a href="<?php echo $quote_url; ?>" title="<?php echo $quote['quote_category_title'] ?> quotes"><?php echo $quote['quote_category_title'] ?></a><br />
+            <span class="text-muted">Published at : <time><?php echo $quote['published_at']; ?></time></span>
           </div>
           <div class="pull-right">
             <span class="text-muted">
-              Published at : <time><?php echo $quote['published_at']; ?></time>
+              
+              <div class="fb-like" data-href="<?php echo $quote_url;  ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
             </span>
             <?php if($sf_user->isAuthenticated()): ?>
             <a href="/manage.php/quote/edit?id=<?php echo $quote['id']; ?>">Edit</a>
