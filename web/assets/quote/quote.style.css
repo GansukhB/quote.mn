@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 27, 2014, 8:28:25 PM
+    Author     : GansukhB
+*/
+/*
+@font-face {
+  font-family: 'Arista';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Arista_ExtraFilled.ttf') format('truetype');
+}*/
+@font-face {
+  font-family: 'Arista';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Arista_light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pico';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pico-black.ttf') format('truetype');
+}
+body{
+    padding-top: 50px;
+}
+/*
+@font-face {
+  font-family: 'Arista';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Arista.ttf') format('truetype');
+}
+*/
+.navbar-brand{
+    font-family: 'Pico';
+    //font-weight: bold;
+    padding-top: 20px;
+    font-size: 3.5em;
+}
+.navbar {
+    border-radius: 0px;
+}
+.navbar-default {
+    background-color: #149bdf;
+    border-color: #e7e7e7;
+}
+.navbar-default .navbar-brand {
+  color: #fcfcfc;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #fcfcfc;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fcfcfc;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #0480be;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fefefe;
+  background-color: #0480be;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #149bdf;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2d6987;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fefefe;
+  background-color: #0480be;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.panel, .btn, .form-control, .breadcrumb{
+    border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fefefe;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fefefe;
+    background-color: #0480be;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fefefe;
+    background-color: #0480be;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #fefefe;
+    background-color: transparent;
+  }
+}
+
+.panel-heading {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+/**************************************************************************/
+a.link-black, a.link-black:hover, a.link-black:focus
+{
+    color: black;
+    text-decoration: none;
+}

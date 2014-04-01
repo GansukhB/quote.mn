@@ -1,0 +1,25 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        %APP_TITLE_SITE_DEFAULT%
+    description:  Good quotes and sayings of famous and inspirational people.
+    keywords:     quote, wisdom, motivation, motivational, inspire, inspiration, quotes, mn, sayings, words, mind, thought
+    language:     en
+    robots:       index, follow
+
+  stylesheets:    
+    - /assets/bootstrap/css/bootstrap.min.css
+    - /assets/font-awesome/css/font-awesome.min.css
+    - /assets/quote/quote.style.css
+
+  javascripts:    
+    - /assets/jquery/jquery-1.11.0.min.js
+    - /assets/bootstrap/js/bootstrap.min.js
+
+  has_layout:     true
+  layout:         layout

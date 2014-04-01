@@ -1,0 +1,25 @@
+.box-menu-tree li{
+    list-style: none;
+}
+.box-menu-tree ul{
+    padding-left: 20px;
+}
+.box-menu-list{
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #686868;
+    background: #fafafa;
+}
+.box-menu-list a {
+    font-weight: normal;
+}
+ul.checkbox_list {
+    padding-left: 0;
+    list-style: none;
+}
+.navbar {
+    border-radius: 0px;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://quote.mn/</loc>
+      <lastmod>2014-03-17</lastmod>
+      <changefreq>hourly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>http://quote.mn/quote</loc>
+      <lastmod>2014-03-17</lastmod>
+      <changefreq>hourly</changefreq>
+   </url>
+   <url>
+      <loc>http://quote.mn/category</loc>
+       <lastmod>2014-03-17</lastmod>
+      <changefreq>daily</changefreq>
+   </url>
+   <url>
+      <loc>http://quote.mn/authors</loc>
+       <lastmod>2014-03-17</lastmod>
+      <changefreq>daily</changefreq>
+   </url>
+</urlset>

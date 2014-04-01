@@ -1,0 +1,47 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: system, action: index }
+
+category:
+  url:   /category
+  param: { module: quote_category, action: index }
+  
+category_show:
+  url:   /category/:id/:slug
+  param: { module: quote_category, action: show }
+
+quote_show:
+  url:   /quote/:id/:slug
+  param: { module: quote, action: show }  
+
+quote_author:
+  url:   /authors
+  param: { module: quote_author, action: index }
+
+quote_author_t:
+  url:   /authors/:author_type/:slug
+  param: { module: quote_author, action: index }
+  
+quote_author_show:
+  url:  /author/:id/:slug
+  param: { module: quote_author, action: show }
+
+sitemap_category:
+  url:  /sitemap_category.:xml
+  param: { module: system, action: sitemap, type: category }
+
+sitemap_author:
+  url:  /sitemap_author.:xml
+  param: { module: system, action: sitemap, type: author }
+  
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
